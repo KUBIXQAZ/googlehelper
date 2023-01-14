@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/icon.png">
+    <title>HELPER</title>
+    <script src="main_javascript.js"></script>
+    <link rel="stylesheet" href="main_stylesheet.css">
+</head>
+<body>
+    <div id="error">
+        <h1 style='color:red; text-transform:uppercase; text-align:center;'>site is not available for your resolution!</h1>
+    </div>
+    <div id="site">
+        <div id="handler">
+            <div id="panel-background"></div>
+            <div id="panel">
+                <div id="search_bar_holder">
+                    <div id="time"></div>
+                    <form>
+                        <input type="search" spellcheck="false" placeholder="Search..." onkeypress="enterKeyPressed(event)" autocomplete="off" id="search_bar">
+                    </form>
+                </div>
+                <div id="link_bar">
+                    <div style="float: left; margin-right: 5px;">
+                        <div class="links" onclick="window.open('https://www.twitch.tv/', '_blank');"><img class="icon" src="images/twitch-logo.png" height="40px" width="40px"></div>
+                    </div>
+                    <div style="float: left; margin-right: 5px;">
+                        <div class="links" onclick="window.open('https://www.youtube.com/', '_blank');"><img class="icon" src="images/youtube-logo.png" height="40px" width="40px"></div>
+                    </div>
+                    <div style="float: left; margin-right: 5px;">
+                        <div class="links" onclick="window.open('https://www.trymyui.com/workers');"><img class="icon" src="images/trymyui-logo.png" height="40px" width="40px"></div>
+                    </div>
+                    <div style="float: left;">
+                        <div class="links" onclick="window.open('https://www.instagram.com/');"><img class="icon" src="images/instagram-logo.png" height="40px" width="40px"></div>
+                    </div>
+                    <a style="size: 0; clear: both;"></a>
+                </div>
+            </div>
+        </div>
+        <div id="style_switch" onclick="switch_style()">
+            <div id="switch_background">
+                <button id="switch"></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
