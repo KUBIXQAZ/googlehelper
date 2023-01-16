@@ -34,7 +34,7 @@ setInterval(function(){
 function enterKeyPressed(event) {
     
     if (event.keyCode == 13) {
-        let url = document.getElementById("url_input").value;
+        let url = document.getElementById("search_bar").value;
         window.open("https://www.google.com/search?q=" + url);
     }
 }
